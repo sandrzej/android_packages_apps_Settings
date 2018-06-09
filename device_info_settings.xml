@@ -32,7 +32,7 @@
         </PreferenceScreen>
 
         <!-- LineageOS Updates -->
-        <cyanogenmod.preference.SelfRemovingPreference android:key="cm_updates"
+        <!--cyanogenmod.preference.SelfRemovingPreference android:key="cm_updates"
                 android:title="@string/cmupdate_settings_title"
                 android:summary="@string/system_update_settings_list_item_summary"
                 cm:requiresOwner="true"
@@ -208,5 +208,19 @@
                 android:summary="@string/selinux_status_enforcing"
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true"/>
+	
+	<!-- ROM name -->
+       <Preference android:key="rom_name"
+               android:enabled="false"
+               android:shouldDisableView="false"
+               android:title="ROM name"
+               android:summary="Andrzej Sadej LineageOS ROM"/>
+
+       <!-- ROM build version -->
+       <Preference android:key="rom_number"
+              android:enabled="false"
+              android:shouldDisableView="false"
+              android:title="ROM build number"
+              android:summary="andrzej 1.0"/>
 
 </PreferenceScreen>
